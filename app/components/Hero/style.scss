@@ -1,0 +1,29 @@
+@import '../../core/sass/variables';
+@import '../../core/sass/mixins';
+
+.hero {
+  display: block;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  min-height: 250px;
+
+  @include breakpoint(sm) {
+    min-height: 400px;
+  }
+}
+.hero__headline, .hero__leadCopy {
+  padding-left: $gutter-spacing;
+  padding-right: $gutter-spacing;
+}
+.hero__headline {
+  margin-bottom: 0.5rem;
+}
+.hero__leadCopy {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}

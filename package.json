@@ -1,0 +1,49 @@
+{
+  "name": "studiocss",
+  "version": "1.0.0",
+  "description": "Isomorphic website built for Studio CSS with React and TestCafe for functional testing",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --progress --inline --hot --config webpack.dev.js",
+    "build": "webpack -d --progress",
+    "prod": "webpack -p --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silentsukh/studiocss.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/silentsukh/studiocss/issues"
+  },
+  "homepage": "https://github.com/silentsukh/studiocss#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "history": "^4.6.0",
+    "immutable": "^3.8.1",
+    "path": "^0.12.7",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.0",
+    "babel-plugin-react-transform": "^2.0.2",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-register": "^6.24.0",
+    "css-loader": "^0.27.3",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "node-sass": "^4.5.0",
+    "postcss-loader": "^1.3.3",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.14.0",
+    "webpack": "^2.2.1",
+    "webpack-dev-middleware": "^1.10.1",
+    "webpack-dev-server": "^2.4.2",
+    "webpack-hot-middleware": "^2.17.1"
+  }
+}

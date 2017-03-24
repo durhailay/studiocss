@@ -1,0 +1,19 @@
+@import '../../../core/sass/colors';
+
+.nav__item {
+   list-style-type: none;
+   flex-grow: 1;
+   flex-shrink: 0;
+   flex-basis: auto;
+}
+
+.nav__link {
+   display: block;
+   padding: 0.5rem 1rem;
+   text-align: center;
+
+   &:hover {
+      text-decoration: none;
+      background-color: $light-grey;
+   }
+}

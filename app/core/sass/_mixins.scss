@@ -1,0 +1,30 @@
+@import 'variables';
+
+@mixin breakpoint($size) {
+  @if $size == 'sm' {
+    @media (min-width: $sm) {
+      @content;
+    }
+  }
+  @else if $size == 'md' {
+    @media (min-width: $md) {
+      @content;
+    }
+  }
+  @else if $size == 'lg' {
+    @media (min-width: $lg) {
+      @content;
+    }
+  }
+}
+@mixin l-col ($size) {
+  @for $i from 1 through $numberOfColumns {
+     .l-col-#{$size}-#{$i} {
+        flex-grow: 0;
+        flex-shrink: 0;
+        padding-left: $gutter-spacing;
+        padding-right: $gutter-spacing;
+        flex-basis: percentage($i/$numberOfColumns);
+     }
+  }
+}

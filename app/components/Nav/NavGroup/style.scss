@@ -1,0 +1,18 @@
+@import '../../../core/sass/mixins';
+
+.nav__group {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	margin: 0;
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: auto;
+
+	@include breakpoint(sm) {
+		align-self: flex-end;
+		flex-grow: 0;
+		flex-shrink: 0;
+		flex-basis: 50%;
+	}
+}
