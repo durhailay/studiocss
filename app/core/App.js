@@ -1,3 +1,4 @@
+// @flow
 import './sass/index.scss';
 
 import React from 'react';
@@ -20,7 +21,7 @@ const App = () => (
           <div className="l-col-xs-12"><h2>Hello Studio CSS</h2></div>
         </div>
         <div className="l-row">
-          <div className="l-col-xs-12 l-col-sm-4 l-col-md-3">
+          <div className="l-col-xs-12 l-col-sm-4">
             <ImageResponsive
               imageUrl="https://placeholdit.imgix.net/~text?txtsize=33&txt=Service&w=400&h=300"
               imageAlt="Service Image"
@@ -28,7 +29,7 @@ const App = () => (
             <h3>Service</h3>
              <p>Bacon ipsum dolor amet strip steak pork belly filet mignon, rump shank short ribs turducken capicola pancetta tri-tip pig hamburger kielbasa salami. Flank alcatra burgdoggen meatloaf cupim.</p>
           </div>
-          <div className="l-col-xs-12 l-col-sm-4 l-col-md-3">
+          <div className="l-col-xs-12 l-col-sm-4">
             <ImageResponsive
               imageUrl="https://placeholdit.imgix.net/~text?txtsize=33&txt=Service&w=400&h=300"
               imageAlt="Service Image"
@@ -36,7 +37,7 @@ const App = () => (
             <h3>Service</h3>
              <p>Bacon ipsum dolor amet strip steak pork belly filet mignon, rump shank short ribs turducken capicola pancetta tri-tip pig hamburger kielbasa salami. Flank alcatra burgdoggen meatloaf cupim.</p>
           </div>
-          <div className="l-col-xs-12 l-col-sm-4 l-col-md-3">
+          <div className="l-col-xs-12 l-col-sm-4">
             <ImageResponsive
               imageUrl="https://placeholdit.imgix.net/~text?txtsize=33&txt=Service&w=400&h=300"
               imageAlt="Service Image"

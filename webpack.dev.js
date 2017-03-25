@@ -20,7 +20,7 @@ module.exports = [{
         include: __dirname,
         query: {
           presets: [ 'react-hmre', 'es2015', 'react' ],
-          plugins: [ 'transform-object-rest-spread' ]
+          plugins: [ 'transform-object-rest-spread', 'transform-flow-strip-types' ]
         }
       },
       {

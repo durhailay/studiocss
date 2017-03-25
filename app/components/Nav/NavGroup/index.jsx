@@ -1,8 +1,9 @@
+// @flow
 import './style.scss';
 
 import React from 'react';
 
-const NavGroup = ({ children }) => (
+const NavGroup = ({ children }: { children?: React.Children }) => (
 	<ul className="nav__group">{children}</ul>
 );
 
