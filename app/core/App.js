@@ -6,6 +6,7 @@ import React from 'react';
 import Hero from '../components/Hero';
 import Nav from '../components/Nav';
 import Services from '../components/Services';
+import Projects from '../components/Projects';
 
 const App= () => (
   <div className="app">
@@ -17,6 +18,7 @@ const App= () => (
     />
     <div className="l-container l-container--centered">
       <Services />
+      <Projects />
     </div>
   </div>
 );
