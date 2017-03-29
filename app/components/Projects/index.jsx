@@ -18,13 +18,13 @@ const Projects = () => (
       </div>
       <div className="l-col-xs-12 l-col-sm-6 l-col-md-4">
         <Project
-          title="British Airways"
+          title="Boston Ivy"
           imageUrl="https://placeholdit.imgix.net/~text?txtsize=33&txt=Project&w=400&h=400"
         />
       </div>
       <div className="l-col-xs-12 l-col-sm-6 l-col-md-4">
         <Project
-          title="British Airways"
+          title="IG"
           imageUrl="https://placeholdit.imgix.net/~text?txtsize=33&txt=Project&w=400&h=400"
         />
       </div>
