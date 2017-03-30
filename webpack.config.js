@@ -55,7 +55,7 @@ module.exports = [{
   name: 'server',
   target: 'node',
   entry: {
-    app: './app/core/App.js'
+    app: './app/core/App.jsx'
   },
   output: {
     path: path.join(__dirname, 'server/lib'),
