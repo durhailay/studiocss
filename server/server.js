@@ -1,4 +1,3 @@
-// @flow
 import express from 'express';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
@@ -30,4 +29,4 @@ app.get('/', (req, res) => {
   res.send(htmlToSend);
 });
 
-app.listen(4000, () => console.log('Server running'));
+app.listen(4000, () => console.log('Server running on http://localhost:4000'));

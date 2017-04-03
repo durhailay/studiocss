@@ -6,8 +6,8 @@
   "scripts": {
     "flow": "flow; test $? -eq 0 -o $? -eq 2",
     "dev": "webpack-dev-server --progress --inline --hot --config webpack.dev.js",
-    "build": "webpack -d --progress",
-    "prod": "webpack -p --progress"
+    "build": "npm run flow && webpack -d --progress",
+    "prod": "npm run flow && webpack -p --progress"
   },
   "repository": {
     "type": "git",
