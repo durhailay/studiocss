@@ -6,10 +6,33 @@
    &--nowrap {
       flex-wrap: nowrap;
    }
+
+   margin-left: -$gutter-spacing;
+   margin-right: -$gutter-spacing;
 }
 
-@include l-col(xs);
+.l-col {
+	 flex-grow: 1;
+   flex-shrink: 0;
+   flex-basis: auto;
+   padding-left: $gutter-spacing;
+   padding-right: $gutter-spacing;
+}
 
+[class^="l-col-"] {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 100%;
+  padding-left: $gutter-spacing;
+  padding-right: $gutter-spacing;
+
+}
+
+@include l-col(xxs);
+
+@include breakpoint(xs) {
+   @include l-col(xs);
+}
 @include breakpoint(sm) {
    @include l-col(sm);
 }
@@ -21,9 +44,6 @@
 }
 
 .l-container {
-   padding-top: $gutter-spacing;
-   padding-left: $gutter-spacing;
-   padding-right: $gutter-spacing;
    width: 100%;
    display: block;
 
@@ -43,12 +63,18 @@
    }
 }
 
+.l-container-flex {
+  display: flex;
+  flex-direction: column;
+}
+
 .l-section {
-  padding-top: $gutter-spacing;
-  padding-bottom: $gutter-spacing;
+  padding: calc(#{$gutter-spacing}*2) $gutter-spacing;
 
   @include breakpoint(sm) {
     padding-top: $section-spacing;
     padding-bottom: $section-spacing;
+    padding-left: 0;
+    padding-right: 0;
   }
 }

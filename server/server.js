@@ -8,7 +8,7 @@ const app = express();
 
 app.use(express.static('dist'));
 
-app.get('/', (req, res) => {
+app.get('*', (req, res) => {
   let output = renderToString(<App />);
   let htmlToSend = `
   <!doctype html>
@@ -17,6 +17,7 @@ app.get('/', (req, res) => {
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
       <title>Studio CSS</title>
+      <link href="https://fonts.googleapis.com/css?family=Lato:100,400" rel="stylesheet">
       <link rel="stylesheet" href="/styles.css">
     </head>
     <body>

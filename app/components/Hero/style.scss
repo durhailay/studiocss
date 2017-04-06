@@ -10,15 +10,20 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-end;
-  min-height: 250px;
+  min-height: 50vh;
 
   @include breakpoint(sm) {
-    min-height: 400px;
+    min-height: 60vh;
   }
 }
 .hero__headline, .hero__leadCopy {
   padding-left: $gutter-spacing;
   padding-right: $gutter-spacing;
+
+  @include breakpoint(sm) {
+    padding-left: $section-spacing;
+    padding-right: $section-spacing;
+  }
 }
 .hero__headline {
   margin-bottom: 0.5rem;

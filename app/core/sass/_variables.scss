@@ -1,8 +1,9 @@
-$numberOfColumns: 12;
+$max-columns: 12;
 
-$sm: 768px;
-$md: 1024px;
-$lg: 1200px;
+$xs: 480px; // start large mobile
+$sm: 768px; // start tablet
+$md: 1024px; // start desktop
+$lg: 1200px; // start large desktop
 
-$gutter-spacing: 1rem;
+$gutter-spacing: .5rem;
 $section-spacing: 4rem;

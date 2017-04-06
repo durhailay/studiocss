@@ -1,4 +1,7 @@
+@import '../../../core/sass/variables';
+
 .service {
+  margin-bottom: $gutter-spacing;
   &__title {
     margin-top: 0.8rem;
   }
