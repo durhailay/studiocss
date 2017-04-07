@@ -1,10 +1,10 @@
 // @flow
 import React from 'react';
-import ReactDom from 'react-dom';
+import ReactDOM from 'react-dom';
 
 import App from '../app/core/App';
 
-ReactDom.render(
+ReactDOM.render(
   <App />,
   document.getElementById('root')
 );
