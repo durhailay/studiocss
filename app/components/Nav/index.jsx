@@ -7,6 +7,7 @@ import NavGroup from './NavGroup';
 import NavItem from './NavItem';
 
 type Props = {
+  isSticky: ?boolean,
   clickCallback: Function
 };
 
@@ -24,7 +25,7 @@ export default class Nav extends React.Component {
 
   render() {
     return (
-      <nav className="nav">
+      <nav className={ this.props.isSticky ? 'nav nav--sticky' : 'nav' }>
         <NavLogo />
         <NavGroup>
           <NavItem text="Home" url="/" clickHandler={ this.handleClick } />

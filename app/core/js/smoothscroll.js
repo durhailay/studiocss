@@ -1,13 +1,8 @@
-export default function smoothScroll(scrollContainer: HTMLElement, scrollToEl: HTMLElement): void {
+export default function smoothScroll(scrollContainer: HTMLElement, scrollToEl: HTMLElement, offset: number = 0): void {
     let currentIteration: number = 0,
       from: number = scrollContainer.scrollTop,
-      by: number = scrollToEl.offsetTop - scrollContainer.scrollTop;
+      by: number = scrollToEl.offsetTop - scrollContainer.scrollTop - offset;
 
-    if (from > scrollToEl.offsetTop) {
-        if (scrollToEl.offsetTop > scrollContainer.scrollHeight - scrollContainer.clientHeight) {
-            by = (scrollContainer.scrollHeight - scrollContainer.clientHeight) - scrollContainer.scrollTop;
-        }
-    }
     let animIterations = Math.round(60 * 0.5);
 
     (function scroll(): void {
