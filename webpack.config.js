@@ -15,7 +15,7 @@ const loaders = [
     exclude: path.resolve(__dirname, 'node_modules'),
     query: {
       presets: [ 'es2015', 'react' ],
-      plugins: [ 'transform-object-rest-spread', 'transform-flow-strip-types' ]
+      plugins: [ 'transform-class-properties', 'transform-object-rest-spread', 'transform-flow-strip-types' ]
     }
   },
   {
