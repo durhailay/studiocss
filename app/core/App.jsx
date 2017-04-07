@@ -3,7 +3,7 @@ import './sass/index.scss';
 
 import React from 'react';
 
-import Hero from '../components/Hero';
+import Hero from '../lib/Hero';
 import Nav from '../components/Nav';
 import Services from '../components/Services';
 import Projects from '../components/Projects';

@@ -2,7 +2,7 @@
 import './style.scss';
 
 import React from 'react';
-import ImageResponsive from '../../ImageResponsive';
+import ImageResponsive from '../../../lib/ImageResponsive';
 
 const Service = ({ title, description, imageUrl }:
                   { title: string, description: string, imageUrl: string }) => (
